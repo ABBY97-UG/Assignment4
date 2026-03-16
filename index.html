@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Creative Spark Agency | DCS 25/26</title>
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Creative Spark Agency</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap-grid.css">
   <link rel="stylesheet" href="css/bootstrap-grid.min.css">
   <link rel="stylesheet" href="css/bootstrap-reboot.css">
@@ -17,20 +17,20 @@
         body { position: relative; }
         section { padding: 100px 0; min-height: 80vh; }
         .hero-section {
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('computers creative.jpg');
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('computers creative.jpg');
             background-size: cover;
+            background-position: center;
             color: white;
             display: flex;
             align-items: center;
-            background-position: center;
         }
-        .navbar { transition: 0.4s; }
+        .navbar .nav-link.active { color: #0d6efd !important; font-weight: bold; }
     </style>
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#main-nav" data-bs-smooth-scroll="true" tabindex="0">
 
-    <nav id="main-nav" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav id="main-nav" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
         <div class="container">
             <a class="navbar-brand fw-bold" href="#">CREATIVE SPARK</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -50,12 +50,12 @@
     </nav>
 
     <section id="home" class="hero-section text-center">
-        <div class="container">
-            <h1 class="display-3 fw-bold">Creative Spark Agency</h1>
-            <p class="lead">Igniting Ideas. Designing the Future.</p>
-            <p class="lead" color="red">At Creative Spark Agency we turn ideas into into powerful digital experiences.<br>Our team combines creativity, technology and strategy to build brands that stand out in today's competitive world.</p>
+        <div class="container p-5"> <h1 class="display-3 fw-bold text-uppercase">Creative Spark Agency</h1>
+            <h2 class="lead mb-4">Igniting Ideas. Designing the Future.</h2>
+            <p class="mb-4 d-none d-md-block">At Creative Spark Agency, we turn ideas into powerful digital experiences.</p>
+           <p class="lead text-red">At Creative Spark Agency we turn ideas into into powerful digital experiences.<br>Our team combines creativity, technology and strategy to build brands that stand out in today's competitive world.</p>
            <p class="lead">Whether you are a startup or established company, we help you create meaningful connections with your audience through modern designs and innovative solutions</p>
-            <div class="mt-4">
+            <div>
                 <a href="#services" class="btn btn-primary btn-lg me-2">Our Services</a>
                 <a href="#contact" class="btn btn-outline-light btn-lg">Contact Us</a>
             </div>
@@ -63,20 +63,20 @@
     </section>
 
     <section id="about" class="bg-light">
-        <div class="container">
+        <div class="container py-5">
             <h2 class="text-center mb-5">About Creative Spark</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <h3>Our Story</h3>
-                    <p>Creative Spark Agency was founded with a simple goal — to help businesses grow through creativity and technology. What started as a small team has grown into a full-service digital agency[cite: 95].</p>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h3 class="text-primary">Our Story</h3>
+                    <p>Creative Spark Agency was founded with a simple goal — to help businesses grow through creativity and technology.</p>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <h4 class="text-primary">Mission</h4>
                     <p>To empower businesses with creative digital solutions that drive growth.</p>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <h4 class="text-primary">Vision</h4>
-                    <p>To become a leading creative digital agency known for transforming ideas into brands.</p>
+                    <p>To become a leading creative digital agency known for transforming ideas.</p>
                 </div>
             </div>
         </div>
@@ -88,21 +88,37 @@
             <div class="row g-4">
                 <div class="col-md-3">
                     <div class="card h-100 shadow-sm border-0">
-                        <div class="card-body">
-                            <h5 class="card-title">Web Design</h5>
-                            <p class="card-text">Modern, responsive, and user-friendly websites optimized for mobile.</p>
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold">Web Design</h5>
+                            <p class="card-text">Modern, responsive, and user-friendly websites optimized for mobile devices.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="card h-100 shadow-sm border-0">
-                        <div class="card-body">
-                            <h5 class="card-title">Branding</h5>
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold">Branding</h5>
                             <p class="card-text">Memorable logos, brand colors, and visual identities that represent your business.</p>
                         </div>
                     </div>
                 </div>
+                <div class="col-md-3">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold">Digital Marketing</h5>
+                            <p class="card-text">Reach the right audience through search engines and social media campaigns.</p>
+                        </div>
+                    </div>
                 </div>
+                <div class="col-md-3">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold">SEO Optimization</h5>
+                            <p class="card-text">Improve your website's visibility on search engines so customers find you easily.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -111,14 +127,22 @@
             <h2 class="text-center mb-5">Our Recent Work</h2>
             <div class="row g-4">
                 <div class="col-md-6 col-lg-3">
-                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=500" class="img-fluid rounded shadow" alt="E-commerce">
+                    <img src="ecommerce2.jpg" class="img-fluid rounded shadow" alt="E-commerce">
                     <h5 class="mt-3">E-Commerce Website</h5>
                 </div>
                 <div class="col-md-6 col-lg-3">
-                    <img src="https://images.unsplash.com/photo-1454165833767-027ff33027ef?auto=format&fit=crop&w=500" class="img-fluid rounded shadow" alt="Corporate">
+                    <img src="website.jpg" class="img-fluid rounded shadow" alt="Corporate">
                     <h5 class="mt-3">Corporate Website</h5>
                 </div>
+                <div class="col-md-6 col-lg-3">
+                    <img src="web app.jpg" class="img-fluid rounded shadow" alt="Mobile App">
+                    <h5 class="mt-3">Mobile App Design</h5>
                 </div>
+                <div class="col-md-6 col-lg-3">
+                    <img src="branding2.jpg" class="img-fluid rounded shadow" alt="Branding">
+                    <h5 class="mt-3">Branding Project</h5>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -128,28 +152,49 @@
             <div class="row justify-content-center g-4">
                 <div class="col-md-4">
                     <div class="card text-center border-0 shadow">
-                        <div class="card-body">
-                            <h5 class="card-title">Sarah Johnson</h5>
-                            <h6 class="text-muted">Creative Director</h6>
-                            <p class="card-text small">Sarah leads the creative vision, ensuring every project reflects innovation.</p>
+                         <img src="nadia.jpg" class="rounded-circle mx-auto mb-3" width="120">
+                        <div class="card-body p-4">
+                            <h5 class="card-title">Diana Nadia</h5>
+                            <h6 class="text-primary mb-3">Creative Director</h6>
+                            <p class="card-text small">Nadia leads the creative vision, ensuring innovation, quality, and creativity.</p>
                         </div>
                     </div>
                 </div>
+                <div class="col-md-4">
+                    <div class="card text-center border-0 shadow">
+                         <img src="abby.jpg" class="rounded-circle mx-auto mb-3" width="120">
+                        <div class="card-body p-4">
+                            <h5 class="card-title">Abby Lee</h5>
+                            <h6 class="text-primary mb-3">Lead Web Developer</h6>
+                            <p class="card-text small">Lee specializes in building high-performance websites using modern tech.</p>
+                        </div>
+                    </div>
                 </div>
+                <div class="col-md-4">
+                    <div class="card text-center border-0 shadow">
+                         <img src="samuel.jpg" class="rounded-circle mx-auto mb-3" width="120">
+                        <div class="card-body p-4">
+                            <h5 class="card-title">Samuel Kagaba</h5>
+                            <h6 class="text-primary mb-3">Digital Marketing Specialist</h6>
+                            <p class="card-text small">Samuel helps businesses grow their online presence through smart strategies.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <section id="contact" class="bg-light">
         <div class="container">
             <h2 class="text-center mb-5">Get In Touch</h2>
-            <div class="row">
-                <div class="col-md-6">
+            <div class="row g-5">
+                <div class="col-md-5">
                     <h4>Contact Information</h4>
-                    <p><strong>Email:</strong> info@creativespark.com </p>
-                    <p><strong>Phone:</strong> +256 700 123 456 </p>
-                    <p><strong>Office:</strong> Kampala, Uganda </p>
+                    <p class="mt-4"><strong>Email:</strong> info@creativespark.com</p>
+                    <p><strong>Phone:</strong> +256 700 123 456</p>
+                    <p><strong>Office:</strong> Kampala, Uganda</p>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-7">
                     <form>
                         <div class="mb-3">
                             <input type="text" class="form-control" placeholder="Enter your full name" required>
@@ -158,9 +203,12 @@
                             <input type="email" class="form-control" placeholder="Enter your email" required>
                         </div>
                         <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Enter subject" required>
+                        </div>
+                        <div class="mb-3">
                             <textarea class="form-control" rows="4" placeholder="Write your message"></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        <button type="submit" class="btn btn-primary w-100">Send Message</button>
                     </form>
                 </div>
             </div>
@@ -168,7 +216,9 @@
     </section>
 
     <footer class="bg-dark text-white text-center py-4">
-        <p class="mb-0">© 2026 Creative Spark Agency. All Rights Reserved.</p>
+        <div class="container">
+            <p class="mb-0">© 2026 Creative Spark Agency. All Rights Reserved.</p>
+        </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
